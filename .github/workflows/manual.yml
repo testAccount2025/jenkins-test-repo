@@ -3,13 +3,13 @@ on:
   push:
     branches: [ "dev" ]
 
-name: Testing
+name: CI/CD
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "greet"
   testing:
     # The type of runner that the job will run on
-    name: testing
+    name: docker publish
     runs-on: ubuntu-latest
     steps:
       - name: Checkout workdir
